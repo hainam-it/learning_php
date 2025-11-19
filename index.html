@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BÀI TẬP</title>
+
+
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <h1>Tiêu đề lớn nhất</h1>
@@ -100,7 +103,7 @@ x<sub> 2 </sub>
             <a href="https://www.google.com"><li>Google</li></a>
             <a href="https://www.netflix.com"><li>Netflix</li></a>
         </ul>
-        <table border="1">
+        <table >
             <thead>
                 <tr>
                     <th>STT</th>
@@ -143,46 +146,32 @@ x<sub> 2 </sub>
 
         <h2 align="cen">Tạo Tài Khoản Mới</h2>
 
-    <table width="100%">
-        <tr>
-            <td align="center">
-                
-                <form action="/submit-registration" method="POST">
-                    
-                    <table border="0" cellpadding="5">
-                        <tr>
-                            <td align="right"><label for="username">Tên người dùng:</label></td>
-                            <td><input type="text" id="username" name="username" required></td>
-                        </tr>
-                        <tr>
-                            <td align="right"><label for="email">Email:</label></td>
-                            <td><input type="email" id="email" name="email" required></td>
-                        </tr>
-                        <tr>
-                            <td align="right"><label for="password">Mật khẩu:</label></td>
-                            <td><input type="password" id="password" name="password" required></td>
-                        </tr>
-                        <tr>
-                            <td align="right"><label for="confirm_password">Xác nhận Mật khẩu:</label></td>
-                            <td><input type="password" id="confirm_password" name="confirm_password" required></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" align="left">
-                                <input type="checkbox" id="terms" name="terms" required>
-                                <label for="terms">Tôi đồng ý với Điều khoản Dịch vụ</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" align="center">
-                                <button type="submit">Đăng Ký</button>
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+    <div class="form-container">
 
-                <script>
+    <h2>Đăng ký tài khoản!</h2>
+    <p>Nhập và lựa chọn các thông tin đăng ký.</p>
+
+    <input class="nhapthongtin" type="text" placeholder="Tên">
+    <input class="nhapthongtin" type="text" placeholder="Họ đệm">
+    <input class="nhapthongtin" type="email" placeholder="Địa chỉ Email">
+    <input class="nhapthongtin" type="text" placeholder="Số điện thoại"><br><br>
+
+    <select id="chonthanhpho">
+        <option>Chọn thành phố</option>
+        <option>Hà Nội</option>
+        <option>Hồ Chí Minh</option>
+    </select>
+    <select id="chontinh">
+        <option>Chọn tỉnh</option>
+        <option>Thanh Hóa</option>
+        <option>Nam Định</option>
+    </select><br><br>
+
+    <textarea placeholder="Ghi chú" rows="6" cols="60"></textarea><br><br>
+
+    <button type="submit">Đăng ký</button>
+    </div>              
         
-    </script>
 
     </body>
 </html>
