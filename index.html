@@ -103,46 +103,60 @@ x<sub> 2 </sub>
             <a href="https://www.google.com"><li>Google</li></a>
             <a href="https://www.netflix.com"><li>Netflix</li></a>
         </ul>
-        <table >
-            <thead>
-                <tr>
-                    <th>STT</th>
-                    <th>Họ Tên</th>
-                    <th>Ngày sinh</th>
-                    <th>Ghi chú</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Nguyễn Văn A</td>
-                    <td>01/01/2000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Trần Thị B</td>
-                    <td>02/02/2001</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Lê Văn C</td>
-                    <td>03/03/2002</td>
-                    <td></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">Danh sách học sinh = 3</td>
-                </tr>
-            </tfoot>
-        </table>
+        <table border = 1>
+    <caption> QUẢN LÝ SINH VIÊN</caption>
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Điểm</th>
+            <th>Xếp loại</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr class = "khóa-a">
+            <td colspan="4">Khóa A</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trần Tiến Tài</td>
+            <td>7</td>
+            <td rowspan="2">Khá</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Phạm Mạnh Khoa</td>
+            <td>8</td>
+        </tr>
+       <tr class = "khóa-b">
+            <td colspan="4">Khóa B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Trần Văn Hưng</td>
+            <td>5</td>
+            <td>Trung bình</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Đỗ Đức Thành</td>
+            <td>9</td>
+            <td>Giỏi</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Tổng cộng: 4</td>
+            <td>7.5</td>
+            <td>Khá</td>
+        </tr>
+    </tfoot>
+</table>
 
         <br></br>
 
 
-        <img src="https://scontent.cdninstagram.com/v/t51.82787-15/522195928_18533007460005471_7389400331386739471_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzY4Mjk3NTIyODYzMzU1MzA3MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkxNy5zZHIuQzMifQ%3D%3D&_nc_ohc=SY2b9tbsX7MQ7kNvwEH7pVH&_nc_oc=AdnhZxFYctE9bDOEuyRCix5qfno9JVasOjLxvZiH623kLrgI9zyJoObecrP9EG-YdwI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=oCTgNn4KD_hAMdEf6cMy-g&oh=00_AfgCK-GWhRT2WWZtc3B2Y3vpOg8FN660CsZplrq3noYwAw&oe=69223F36" alt="Ảnh Dangrangto" width="400" height="500" />
+        <!-- <img src="https://scontent.cdninstagram.com/v/t51.82787-15/522195928_18533007460005471_7389400331386739471_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzY4Mjk3NTIyODYzMzU1MzA3MQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkxNy5zZHIuQzMifQ%3D%3D&_nc_ohc=SY2b9tbsX7MQ7kNvwEH7pVH&_nc_oc=AdnhZxFYctE9bDOEuyRCix5qfno9JVasOjLxvZiH623kLrgI9zyJoObecrP9EG-YdwI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=oCTgNn4KD_hAMdEf6cMy-g&oh=00_AfgCK-GWhRT2WWZtc3B2Y3vpOg8FN660CsZplrq3noYwAw&oe=69223F36" alt="Ảnh Dangrangto" width="400" height="500" /> -->
         <br></br>
         <h2 align="center">Tạo Tài Khoản Mới</h2>
 
@@ -151,17 +165,23 @@ x<sub> 2 </sub>
     <h2 align="center">Đăng ký tài khoản!</h2>
     <i>Nhập và lựa chọn các thông tin đăng ký.</i>
 
-    <input class="nhapthongtin" type="text" placeholder="Tên">
-    <input class="nhapthongtin" type="text" placeholder="Họ đệm">
-    <input class="nhapthongtin" type="email" placeholder="Địa chỉ Email">
-    <input class="nhapthongtin" type="text" placeholder="Số điện thoại"><br><br>
+   <div class="row">
+        <input class="nhapthongtin" type="text" placeholder="Tên">
+        <input class="nhapthongtin" type="text" placeholder="Họ đệm">
+    </div>
 
+    <!-- Email + SĐT -->
+    <div class="row">
+        <input class="nhapthongtin" type="email" placeholder="Địa chỉ Email">
+        <input class="nhapthongtin" type="text" placeholder="Số điện thoại">
+    </div>
     <select id="chonthanhpho">
         <option>Chọn thành phố</option>
         <option>Hà Nội</option>
         <option>Hồ Chí Minh</option>
     </select>
     <select id="chontinh">
+        
         <option>Chọn tỉnh</option>
         <option>Thanh Hóa</option>
         <option>Nam Định</option>

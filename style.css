@@ -1,9 +1,33 @@
-table, th, td {
-    border: 4px solid black;
-    border-collapse: collapse;/*gộp viền cho từng ô*/
-    padding: 5px;
-    font-family: Arial;
-}
+table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+caption 
+{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+thead {
+            background-color: #f2f2f2;
+        }
+tfoot {
+            font-weight: bold;
+            background-color: #e24646;
+        }
+.khóa-a {
+            background-color: #e159cd;
+        }
+.khóa-b {
+            background-color: #19c3d9;
+        }
+
 .form-container{
     max-width: 500px;
     margin: 50px auto;
@@ -11,6 +35,12 @@ table, th, td {
     border: 2px solid #a31d1d;
     font-family: Arial;
     background-color: #c3f8e9;
+}
+
+
+.row {
+    display: flex;
+    gap: 10px;  /* Khoảng cách giữa 2 ô */
 }
 
 .nhapthongtin{
